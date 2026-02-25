@@ -1,65 +1,141 @@
-import Image from "next/image";
-
 export default function Home() {
+  const phoneDisplay = "360-772-9079";
+  const phoneLink = "3607729079";
+  const email = "allstainls@gmail.com";
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <main style={styles.main}>
+      <div style={styles.card}>
+        <div style={styles.badge}>Site Under Construction</div>
+
+        <h1 style={styles.h1}>All Stainless Installations</h1>
+
+        <p style={styles.p}>
+          Our website is currently being built. We specialize in professional
+          stainless steel installations for residential and commercial
+          projects.
+        </p>
+
+        <p style={styles.sub}>
+          Need a site visit? Contact us directly and we’ll schedule it with you.
+        </p>
+
+        <div style={styles.actions}>
+          <a href={`tel:${phoneLink}`} style={{ ...styles.button, ...styles.primary }}>
+            Call to Book a Site Visit
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+
+          <a href={`mailto:${email}`} style={{ ...styles.button, ...styles.secondary }}>
+            Email to Request a Site Visit
           </a>
         </div>
-      </main>
-    </div>
+
+        <div style={styles.meta}>
+          <div>
+            <strong>Phone:</strong>{" "}
+            <a href={`tel:${phoneLink}`} style={styles.link}>
+              {phoneDisplay}
+            </a>
+          </div>
+
+          <div>
+            <strong>Email:</strong>{" "}
+            <a href={`mailto:${email}`} style={styles.link}>
+              {email}
+            </a>
+          </div>
+        </div>
+
+        <p style={styles.footer}>
+          © {new Date().getFullYear()} All Stainless Installations
+        </p>
+      </div>
+    </main>
   );
 }
+
+const styles: Record<string, React.CSSProperties> = {
+  main: {
+    minHeight: "100vh",
+    display: "grid",
+    placeItems: "center",
+    padding: "24px",
+    background: "linear-gradient(135deg, #f4f4f4 0%, #ffffff 100%)",
+    fontFamily:
+      'ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial',
+  },
+  card: {
+    width: "100%",
+    maxWidth: 700,
+    border: "1px solid #e6e6e6",
+    borderRadius: 18,
+    padding: 32,
+    boxShadow: "0 15px 35px rgba(0,0,0,0.05)",
+    background: "#fff",
+    textAlign: "center",
+  },
+  badge: {
+    display: "inline-block",
+    padding: "6px 12px",
+    borderRadius: 999,
+    background: "#111",
+    color: "#fff",
+    fontSize: 12,
+    letterSpacing: 0.5,
+    textTransform: "uppercase",
+  },
+  h1: {
+    fontSize: 40,
+    margin: "20px 0 10px",
+    lineHeight: 1.1,
+  },
+  p: {
+    fontSize: 17,
+    color: "#444",
+    marginBottom: 10,
+  },
+  sub: {
+    fontSize: 15,
+    color: "#666",
+    marginBottom: 20,
+  },
+  actions: {
+    display: "flex",
+    gap: 14,
+    justifyContent: "center",
+    flexWrap: "wrap",
+    marginTop: 15,
+    marginBottom: 20,
+  },
+  button: {
+    padding: "14px 20px",
+    borderRadius: 14,
+    textDecoration: "none",
+    fontWeight: 600,
+    fontSize: 15,
+  },
+  primary: {
+    background: "#111",
+    color: "#fff",
+  },
+  secondary: {
+    background: "#fff",
+    color: "#111",
+    border: "1px solid #ddd",
+  },
+  meta: {
+    borderTop: "1px solid #eee",
+    paddingTop: 16,
+    fontSize: 14,
+    color: "#333",
+  },
+  link: {
+    color: "#111",
+    textDecoration: "none",
+  },
+  footer: {
+    marginTop: 20,
+    fontSize: 12,
+    color: "#777",
+  },
+};
