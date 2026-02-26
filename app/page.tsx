@@ -12,7 +12,7 @@ export default function Home() {
 
         <p style={styles.p}>
           Our website is currently being built. We specialize in professional
-          stainless steel installations for residential and commercial
+          stainless steel installations for commercial
           projects.
         </p>
 
