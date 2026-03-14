@@ -5,18 +5,39 @@ import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 
 export const metadata = {
-  title: `${site.name} | ${site.tagline}`,
-  description:
-    "Commercial stainless installations, fabrication, and welding. Precision work, clean finishes, built for commercial environments.",
   metadataBase: new URL(`https://${site.domain}`),
+
+  title: `${site.name} | Commercial Stainless Steel Installation & Welding`,
+  
+  description:
+    "Commercial stainless steel installation, fabrication, and welding for restaurants, commercial kitchens, and industrial environments across Oregon and Washington.",
+
+  keywords: [
+    "commercial stainless steel installation",
+    "stainless steel welding contractor",
+    "stainless steel fabrication",
+    "commercial kitchen stainless installation",
+    "stainless steel contractor Oregon",
+    "stainless steel contractor Washington",
+  ],
+
   openGraph: {
-    title: `${site.name} | ${site.tagline}`,
+    title: `${site.name} | Commercial Stainless Steel Installation & Welding`,
     description:
-      "Commercial stainless installations, fabrication, and welding. Black-and-white skeleton aesthetic with a bold American backdrop.",
+      "Commercial stainless steel installation, fabrication, and welding for restaurants and commercial environments.",
+    url: `https://${site.domain}`,
+    siteName: site.name,
     type: "website",
   },
-  robots: { index: true, follow: true },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
+
+
 
 export default function RootLayout({ children }) {
   return (
