@@ -8,8 +8,18 @@ export default function SiteFooter() {
           <div className="footerBrand">
             <div className="footerTitle">{site.name}</div>
             <p className="footerText">
-              Commercial stainless installations and welding for clients in
-              Oregon and Washington.
+                All Stainless Installations provides commercial stainless steel
+                installation, fabrication, and welding services across Oregon and
+                Washington including:
+
+                Portland
+                Salem
+                Eugene
+                Bend
+                Vancouver WA
+                Seattle
+                Tacoma
+                Spokane
             </p>
           </div>
 
