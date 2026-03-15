@@ -12,14 +12,14 @@ export default function SiteFooter() {
                 installation, fabrication, and welding services across Oregon and
                 Washington including:
 
-                Portland
-                Salem
-                Eugene
-                Bend
-                Vancouver WA
-                Seattle
-                Tacoma
-                Spokane
+                Portland,
+                Salem,
+                Eugene,
+                Bend,
+                Vancouver,
+                Seattle,
+                Tacoma,
+                Spokane & Surrounding Areas.
             </p>
           </div>
 
