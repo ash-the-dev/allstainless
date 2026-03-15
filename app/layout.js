@@ -23,8 +23,7 @@ export const metadata = {
 
   openGraph: {
     title: `${site.name} | Commercial Stainless Steel Installation & Welding`,
-    description:
-      "Commercial stainless steel installation, fabrication, and welding for restaurants and commercial environments.",
+    description: "Commercial stainless steel installation, fabrication, and welding for restaurants, commercial kitchens, and industrial environments across Oregon and Washington.",
     url: `https://${site.domain}`,
     siteName: site.name,
     type: "website",
@@ -35,8 +34,6 @@ export const metadata = {
     follow: true,
   },
 };
-
-
 
 
 export default function RootLayout({ children }) {

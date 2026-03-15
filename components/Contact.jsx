@@ -81,9 +81,6 @@ export default function Contact() {
             </div>
 
             <div className="contactFormFooter">
-              <p className="contactNote">
-                Commercial projects only. No grease ducts or hood work.
-              </p>
 
               <button type="submit" className="btn btnPrimary">
                 Send request
