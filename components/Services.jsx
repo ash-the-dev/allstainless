@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "Custom Brackets and Supports",
-    desc: "Structural and finish supports aligned, anchored, and built for daily commercial use.",
+    desc: "Finish supports aligned, anchored, and built for daily commercial use.",
   },
   {
     title: "Retrofits and Modifications",
@@ -45,11 +45,6 @@ export default function Services() {
             <p>{service.desc}</p>
           </article>
         ))}
-      </div>
-
-      <div className="scopeNote">
-        <span className="scopeLabel">Scope note</span>
-        <span>Commercial work only. No grease ducts or hood work.</span>
       </div>
     </Section>
   );

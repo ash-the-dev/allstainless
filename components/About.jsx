@@ -25,16 +25,6 @@ export default function About() {
             clean. If you have drawings, dimensions, and a schedule, we bring
             the heat in the right way: controlled, precise, and tidy.
           </p>
-
-          <div className="aboutMeta">
-            <div className="aboutMetaItem">
-              <span className="aboutMetaLabel">Scope</span>
-              <span>Commercial projects only</span>
-            </div>
-            <div className="aboutMetaItem">
-              <span className="aboutMetaLabel">Exclusions</span>
-              <span>No grease ducts or hood work</span>
-            </div>
           </div>
         </div>
 
@@ -49,7 +39,6 @@ export default function About() {
             />
           </div>
         </div>
-      </div>
     </Section>
   );
 }

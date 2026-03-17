@@ -14,6 +14,10 @@ const caps = [
     desc: "Brushed, smooth, and practical finishes designed for commercial durability and clean presentation.",
   },
   {
+    title: "Foodservice systems",
+    desc: "Fabrication and installation of grease ducts, kitchen hoods, and stainless components for walk-in coolers and freezers.",
+  },
+  {
     title: "Install discipline",
     desc: "Measured layout, protected surfaces, clean sequencing, and punch-list aware execution.",
   },
@@ -33,7 +37,7 @@ export default function Capabilities() {
       id="capabilities"
       eyebrow="How we work"
       title="Built on process and precision"
-      subtitle="The structure underneath the finish: planning, consistency, coordination, and repeatable quality."
+      subtitle="Underneath the finish: planning, consistency, coordination, and repeatable quality."
     >
       <div className="cards">
         {caps.map((capability) => (

@@ -26,14 +26,6 @@ export default function ComingSoonHero() {
               Built for commercial work.
             </h1>
 
-            <p className="sub">
-              {site.name} is launching a new site. In the meantime, send your scope and timeline and we’ll respond fast.
-              <br />
-              <span style={{ opacity: 0.9 }}>
-                Note: Commercial projects only. No grease ducts or hood work.
-              </span>
-            </p>
-
             <div className="badges">
               <span className="badge">Stainless installs</span>
               <span className="badge">Field weld + shop fab</span>
@@ -121,9 +113,6 @@ function QuickQuote() {
         <a className="button" href="#contact">
           Full contact
         </a>
-      </div>
-      <div className="small">
-        Commercial projects only. No grease ducts or hood work.
       </div>
     </form>
   );
