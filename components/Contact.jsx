@@ -75,6 +75,20 @@ export default function Contact() {
               </label>
 
               <label className="field fieldFull">
+                <span>Project type</span>
+                <select name="project_type" defaultValue="">
+                  <option value="">Select a category</option>
+                  <option value="Commercial kitchen">Commercial kitchen</option>
+                  <option value="Restaurant / food service">
+                    Restaurant / food service
+                  </option>
+                  <option value="Industrial / other commercial">
+                    Industrial / other commercial
+                  </option>
+                </select>
+              </label>
+
+              <label className="field fieldFull">
                 <span>Project details</span>
                 <textarea name="message" required />
               </label>

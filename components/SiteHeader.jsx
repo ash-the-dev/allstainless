@@ -19,11 +19,11 @@ export default function SiteHeader() {
           </Link>
 
           <nav className="siteNav" aria-label="Main navigation">
-            <Link href="#services">Services</Link>
-            <Link href="#capabilities">Capabilities</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="#about">About</Link>
-            <Link href="#contact">Contact</Link>
+            {site.nav.map((item) => (
+              <Link key={item.href} href={item.href}>
+                {item.label}
+              </Link>
+            ))}
           </nav>
         </div>
       </div>

@@ -25,7 +25,6 @@ export default function About() {
             clean. If you have drawings, dimensions, and a schedule, we bring
             the heat in the right way: controlled, precise, and tidy.
           </p>
-          </div>
         </div>
 
         <div className="aboutVisual">
@@ -39,6 +38,7 @@ export default function About() {
             />
           </div>
         </div>
+      </div>
     </Section>
   );
 }

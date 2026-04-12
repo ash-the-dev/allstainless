@@ -1,8 +1,8 @@
 export default function sitemap() {
+  const base = "https://www.allstainlessinstallations.com";
+  const now = new Date();
   return [
-    {
-      url: "https://www.allstainlessinstallations.com",
-      lastModified: new Date(),
-    },
+    { url: base, lastModified: now },
+    { url: `${base}/commercial-kitchens`, lastModified: now },
   ];
 }
