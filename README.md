@@ -3,9 +3,9 @@
 A modern website built for a stainless steel fabrication and installation company.  
 The goal was simple: create a clean, fast, and trustworthy online presence that actually converts visitors into customers.
 
-## Live Site
-https://allstainless.vercel.app
-https://www.allstainlessinstallations.com
+## Live Sites
+- https://allstainlessinstallations.com  
+- https://allstainless.vercel.app
 
 ## What I built
 - Fully responsive layout for mobile, tablet, and desktop
