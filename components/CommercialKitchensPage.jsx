@@ -1,5 +1,4 @@
-import Link from "next/link";
-import FlagBackdrop from "./FlagBackdrop";
+import TrackableLink from "./TrackableLink";
 
 const coreServices = [
   {
@@ -86,37 +85,50 @@ const galleryPlaceholders = [
 export default function CommercialKitchensPage() {
   return (
     <div className="ckShell">
-      <div className="ckFlagLayer">
-        <FlagBackdrop variant="dark" className="ckFlagSvg" svgId="ck-flag" />
-      </div>
-      <div className="ckScrim" aria-hidden="true" />
-
       <div className="ckContent">
-        <header className="ckHero">
+        <header className="ckHero flagHeroBg">
           <div className="container">
             <div className="ckHeroPanel">
               <p className="ckEyebrow">Primary service area</p>
-              <h1 className="ckTitle">Commercial kitchens</h1>
+              <h1 className="ckTitle">
+                <span className="ckTitleEm">commercial kitchens</span>
+              </h1>
               <p className="ckLead">
                 Fabrication, installation, upgrades, repairs, and replacements
                 for high-use foodservice environments — stainless systems built
                 for inspection-ready cleanliness and long shifts on the line.
               </p>
               <div className="ckHeroActions">
-                <Link href="/#contact" className="btn btnPrimary ckBtnPrimary">
+                <TrackableLink
+                  href="/#contact"
+                  className="btn btnPrimary ckBtnPrimary"
+                  trackEvent="contact_click"
+                  trackSource="ck_hero_request_quote"
+                  category="conversion"
+                  isConversion
+                >
                   Request a kitchen quote
-                </Link>
-                <Link href="/#projects" className="btn btnGhost ckBtnGhost">
+                </TrackableLink>
+                <TrackableLink
+                  href="/#projects"
+                  className="btn btnGhost ckBtnGhost"
+                  trackEvent="projects_click"
+                  trackSource="ck_hero_view_projects"
+                  category="engagement"
+                >
                   View project work
-                </Link>
+                </TrackableLink>
               </div>
             </div>
           </div>
         </header>
 
-        <section className="ckSection" aria-labelledby="ck-services-heading">
+        <section
+          className="ckSection ckStage"
+          aria-labelledby="ck-services-heading"
+        >
           <div className="container">
-            <div className="ckSectionHead">
+            <div className="ckSectionHead ckSectionHead--onLight">
               <h2 id="ck-services-heading">Kitchen scope we deliver</h2>
               <p>
                 One focused team for stainless-intensive kitchen work — from
@@ -138,11 +150,11 @@ export default function CommercialKitchensPage() {
         </section>
 
         <section
-          className="ckSection ckSection--tight"
+          className="ckSection ckSection--tight ckStage"
           aria-labelledby="ck-protect-heading"
         >
           <div className="container">
-            <div className="ckSectionHead">
+            <div className="ckSectionHead ckSectionHead--onLight">
               <h2 id="ck-protect-heading">
                 Stainless &amp; protective metalwork
               </h2>
@@ -165,9 +177,9 @@ export default function CommercialKitchensPage() {
           </div>
         </section>
 
-        <section className="ckSection" aria-labelledby="ck-materials-heading">
+        <section className="ckSection ckStage" aria-labelledby="ck-materials-heading">
           <div className="container">
-            <div className="ckSectionHead">
+            <div className="ckSectionHead ckSectionHead--onLight">
               <h2 id="ck-materials-heading">Materials</h2>
               <p>
                 Right alloy for the exposure — presented clearly so owners and
@@ -191,7 +203,7 @@ export default function CommercialKitchensPage() {
         </section>
 
         <section
-          className="ckSection ckSection--darkPanel"
+          className="ckSection ckSection--darkPanel ckStage"
           aria-labelledby="ck-foodsys-heading"
         >
           <div className="container">
@@ -211,9 +223,9 @@ export default function CommercialKitchensPage() {
           </div>
         </section>
 
-        <section className="ckSection" aria-labelledby="ck-gallery-heading">
+        <section className="ckSection ckStage" aria-labelledby="ck-gallery-heading">
           <div className="container">
-            <div className="ckSectionHead">
+            <div className="ckSectionHead ckSectionHead--onLight">
               <h2 id="ck-gallery-heading">Before &amp; after</h2>
               <p>
                 Project photography coming soon. Replace placeholders with
@@ -251,7 +263,7 @@ export default function CommercialKitchensPage() {
           </div>
         </section>
 
-        <section className="ckCta" aria-label="Contact call to action">
+        <section className="ckCta ckStage" aria-label="Contact call to action">
           <div className="container">
             <div className="ckCtaPanel">
               <div>
@@ -262,9 +274,16 @@ export default function CommercialKitchensPage() {
                   remodel schedule.
                 </p>
               </div>
-              <Link href="/#contact" className="btn btnPrimary ckBtnPrimary">
+              <TrackableLink
+                href="/#contact"
+                className="btn btnPrimary ckBtnPrimary"
+                trackEvent="contact_click"
+                trackSource="ck_cta_start_conversation"
+                category="conversion"
+                isConversion
+              >
                 Start a conversation
-              </Link>
+              </TrackableLink>
             </div>
           </div>
         </section>

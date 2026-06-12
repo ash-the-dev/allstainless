@@ -11,7 +11,7 @@ const caps = [
   },
   {
     title: "Finishes",
-    desc: "Brushed, smooth, and practical finishes designed for commercial durability and clean presentation.",
+    desc: "Brushed, smooth, and practical finishes designed for commercial kitchen durability and clean presentation.",
   },
   {
     title: "Food service systems",

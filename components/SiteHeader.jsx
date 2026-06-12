@@ -1,6 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "../lib/site";
+import TrackableLink from "./TrackableLink";
+
+function navTrackProps(href) {
+  if (href.includes("contact")) {
+    return {
+      trackEvent: "contact_click",
+      trackSource: "nav_contact",
+      category: "conversion",
+      isConversion: true,
+    };
+  }
+
+  const slug = href
+    .replace(/^\//, "")
+    .replace(/^#/, "")
+    .replace(/[^a-z0-9]+/gi, "_")
+    .replace(/^_|_$/g, "");
+
+  return {
+    trackEvent: "nav_click",
+    trackSource: slug ? `nav_${slug}` : "nav_home",
+    category: "navigation",
+    isConversion: false,
+  };
+}
 
 export default function SiteHeader() {
   return (
@@ -19,11 +44,14 @@ export default function SiteHeader() {
           </Link>
 
           <nav className="siteNav" aria-label="Main navigation">
-            {site.nav.map((item) => (
-              <Link key={item.href} href={item.href}>
-                {item.label}
-              </Link>
-            ))}
+            {site.nav.map((item) => {
+              const track = navTrackProps(item.href);
+              return (
+                <TrackableLink key={item.href} href={item.href} {...track}>
+                  {item.label}
+                </TrackableLink>
+              );
+            })}
           </nav>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { site } from "../lib/site";
+import TrackableAnchor from "./TrackableAnchor";
 
 export default function SiteFooter() {
   return (
@@ -8,8 +9,8 @@ export default function SiteFooter() {
           <div className="footerBrand">
             <div className="footerTitle">{site.name}</div>
             <p className="footerText">
-                All Stainless Installations provides commercial stainless steel
-                installation, fabrication, and welding services across Oregon and
+                All Stainless Installations provides stainless steel installation,
+                fabrication, and welding for commercial kitchens across Oregon and
                 Washington including:
 
                 Portland,
@@ -24,8 +25,24 @@ export default function SiteFooter() {
           </div>
 
           <div className="footerContact">
-            <a href="mailto:allstainls@gmail.com">allstainls@gmail.com</a>
-            <a href="tel:13607729079">(360) 772-9079</a>
+            <TrackableAnchor
+              href="mailto:allstainls@gmail.com"
+              trackEvent="contact_click"
+              trackSource="footer_email"
+              category="conversion"
+              isConversion
+            >
+              allstainls@gmail.com
+            </TrackableAnchor>
+            <TrackableAnchor
+              href="tel:13607729079"
+              trackEvent="contact_click"
+              trackSource="footer_phone"
+              category="conversion"
+              isConversion
+            >
+              (360) 772-9079
+            </TrackableAnchor>
           </div>
         </div>
 

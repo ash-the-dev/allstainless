@@ -3,7 +3,7 @@ import Section from "./Section";
 const services = [
   {
     title: "Stainless Installations",
-    desc: "On-site stainless installs for commercial spaces, including counters, cladding, splash, trim, supports, and custom fit work.",
+    desc: "On-site stainless installs for commercial kitchens and foodservice lines — counters, cladding, splash, trim, supports, and custom fit work.",
   },
   {
     title: "Fabrication and Fit-up",
@@ -11,7 +11,7 @@ const services = [
   },
   {
     title: "Welding Services",
-    desc: "TIG and MIG stainless welding for commercial assemblies, repairs, retrofits, and new-build components.",
+    desc: "TIG and MIG stainless welding for commercial kitchen assemblies, repairs, retrofits, and new-build components.",
   },
   {
     title: "Sanitary, Cleanable Builds",
@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "Custom Brackets and Supports",
-    desc: "Finish supports aligned, anchored, and built for daily commercial use.",
+    desc: "Finish supports aligned, anchored, and built for daily use in commercial kitchens.",
   },
   {
     title: "Retrofits and Modifications",
@@ -32,7 +32,7 @@ export default function Services() {
     <Section
       id="services"
       eyebrow="What we do"
-      title="Commercial Stainless Services"
+      title="Stainless for commercial kitchens"
       subtitle="Fabrication, fit-up, installation, and welding with clean execution and field-tested discipline."
     >
       <div className="cards">

@@ -7,7 +7,7 @@ export default function About() {
     <Section
       id="about"
       eyebrow="Who we are"
-      title="Built for commercial work"
+      title="Built for commercial kitchens"
       subtitle="Measure, cut, weld, finish. Clean execution without the extra noise."
     >
       <div className="aboutWrap">
@@ -20,8 +20,8 @@ export default function About() {
           </h3>
 
           <p className="aboutText">
-            We focus on commercial stainless installations and welding with one
-            simple goal: deliver work that looks sharp, lasts, and installs
+            We focus on stainless installations and welding for commercial kitchens
+            with one simple goal: deliver work that looks sharp, lasts, and installs
             clean. If you have drawings, dimensions, and a schedule, we bring
             the heat in the right way: controlled, precise, and tidy.
           </p>

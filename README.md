@@ -28,6 +28,20 @@ The focus was on clarity, speed, and making sure nothing got in the way of someo
 - Improve SEO targeting for local search
 - Add project gallery with completed work
 
+## Production deploy workflow
+
+Default production deploy (deploys current local files directly):
+
+```bash
+npm run deploy:prod
+```
+
+Strict production deploy (requires clean/synced git state first):
+
+```bash
+npm run deploy:prod:strict
+```
+
 ---
 
 Built and deployed by me as part of my growing portfolio of real-world projects.

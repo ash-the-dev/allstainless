@@ -1,12 +1,20 @@
 import Image from "next/image";
 
 const projectImages = [
-  { src: "/image-1.jpg", alt: "Commercial stainless installation project 1" },
-  { src: "/image-2.jpg", alt: "Commercial stainless installation project 2" },
-  { src: "/image-3.jpg", alt: "Commercial stainless installation project 3" },
-  { src: "/image-4.jpg", alt: "Commercial stainless installation project 4" },
-  { src: "/image-5.jpg", alt: "Commercial stainless installation project 5" },
-  { src: "/image-6.jpg", alt: "Commercial stainless installation project 6" },
+  {
+    src: "/image-16.jpg",
+    alt: "Custom stainless hood and wall cladding installation",
+    title: "Custom hood and wall stainless package",
+    description:
+      "A recent install featuring a full stainless wall package and ventilation hood integration for a clean, durable prep line.",
+  },
+  {
+    src: "/image-17.jpg",
+    alt: "Walk-in cooler stainless enclosure and door system",
+    title: "Walk-in stainless enclosure buildout",
+    description:
+      "Recent project with precision-fitted stainless wall panels and commercial walk-in door systems built for daily service use.",
+  },
 ];
 
 export default function Projects() {
@@ -15,11 +23,10 @@ export default function Projects() {
       <div className="container">
         <div className="sectionShell">
           <div className="sectionHeading">
-            <p className="sectionEyebrow">Featured work</p>
-            <h2>Selected projects</h2>
+            <p className="sectionEyebrow">Recent projects</p>
+            <h2>Recent project highlights</h2>
             <p>
-              Recent fabrication and installation work, shown cleanly and
-              without the fluff.
+              A focused look at recent stainless installs and field-ready buildouts.
             </p>
           </div>
 
@@ -34,6 +41,10 @@ export default function Projects() {
                     height={900}
                     className="projectImage"
                   />
+                </div>
+                <div className="projectBody">
+                  <h3>{image.title}</h3>
+                  <p>{image.description}</p>
                 </div>
               </article>
             ))}
